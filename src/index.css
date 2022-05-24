@@ -1,0 +1,11 @@
+body {
+    background-color: #2F303A;
+    font-family: Poppins;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
