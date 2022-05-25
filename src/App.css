@@ -8,9 +8,26 @@
 }
 
 .girl {
-	height: 2rem;
+	height: 70vh;
+	z-index: 1;
+	
 }
 
 .homePage {
-	height: 100vh;
+	
+	display: flex;
+	
+
+}
+
+.girlContainer{
+	height:100vh;
+	display: flex;
+	align-items: flex-end;
+}
+
+.textContainer{
+	height:100vh;
+	display: flex;
+	align-items: center;
 }

@@ -33,7 +33,7 @@ const Navbar = () => {
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-around'}}>
             <Box className='logoNavbar' sx={{ display: 'flex'}} >
             <img src={logo}  alt="logo" />
-            <Typography  sx={{ display: 'flex', alignItems: 'center',  paddingLeft: 2 }} variant="h6" color='white'>
+            <Typography  sx={{ display: 'flex', alignItems: 'center',  paddingLeft: 2, }} variant="h6" color='white'>
               Soundwave
             </Typography>
             </Box>
@@ -52,6 +52,5 @@ const Navbar = () => {
           </Toolbar>
         </AppBar>
      );
-}
- 
+}  
 export default Navbar;
