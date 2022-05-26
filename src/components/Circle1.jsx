@@ -5,6 +5,17 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 const Circle1styled = styled(Box)(({ theme }) => ({
+    [theme.breakpoints.down('sm')]: {
+        borderRadius: '50%',
+        backgroundColor: '#bc3a801a',
+        zIndex: '-1',
+        width: '100px',
+        height: '100px',
+        position: 'absolute',
+        top:'76vh',
+        left: '6vw' ,
+        },
+        [theme.breakpoints.up('sm')]: {
     borderRadius: '50%',
 	backgroundColor: '#bc3a801a',
 	zIndex: '-1',
@@ -13,12 +24,14 @@ const Circle1styled = styled(Box)(({ theme }) => ({
     position: 'absolute',
 	top:'40vh',
 	left: '10vw' ,
-
+    }
+    
   }));
+
 
 const Circle1 = () => {
     return ( 
-        <Circle1styled sx={{display: { xs: 'none', md: 'inline'}}}/>
+        <Circle1styled />
      );
 }
  

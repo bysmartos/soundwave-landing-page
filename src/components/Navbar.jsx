@@ -7,8 +7,16 @@ import { spacing } from '@mui/system';
 import { Box } from '@mui/material';
 import { Menu, MenuItem } from '@mui/material';
 import Button from '@mui/material/Button';
+import { styled } from '@mui/material';
 
 const pages = ['Discover', 'Join'];
+
+const ColorAppBar = styled(AppBar)(({ theme }) => ({
+  color: theme.palette.getContrastText('#1762A7'),
+  backgroundColor: '#2F303A',
+}));
+
+
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,7 +37,7 @@ const Navbar = () => {
     setAnchorElUser(null);
   };
     return ( 
-        <AppBar  color="transparent"  elevation={0} position="fixed" sx={{ paddingTop: 2 }} style={{boxShadow: "none"}}>
+        <ColorAppBar  color="transparent"  elevation={0} position="fixed" sx={{ paddingTop: 2,flexWrap: 'wrap' }} style={{boxShadow: "none"}}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-around'}}>
             <Box className='logoNavbar' sx={{ display: 'flex'}} >
             <img src={logo}  alt="logo" />
@@ -50,7 +58,7 @@ const Navbar = () => {
           </Box>
             
           </Toolbar>
-        </AppBar>
+        </ColorAppBar>
      );
 }  
 export default Navbar;

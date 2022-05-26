@@ -27,17 +27,17 @@ const HomePage = () => {
     return ( 
         <>
         <Circle3 />
-        <Circle2 sx={{display: { xs: 'none', md: 'none'}}}/>
-        <Circle1 sx={{display: { xs: 'none', md: 'none'}}}/>
+        <Circle2 />
+        <Circle1 />
         <Box sx={{  display:'flex', justifyContent: 'center'}}>
             <Box className='homePage'>
                 <Box className='girlContainer' sx={{display: { xs: 'none', md: 'flex'}}}>
                     <img className='girl' src={girl} alt="landing-page-girl" />
                 </Box>
-                <Box className='textContainer'>
+                <Box className='textContainer'sx={{ paddingRight:{xs:'1rem'}, paddingLeft:{xs:'2rem'} }}>
                     <Box sx={{  display: { xs: 'flex', md: 'flex' }, flexDirection: 'column',  flexWrap: 'wrap'}}>
-                        <Typography fontSize='2.4rem' sx={{ fontWeight: 500, paddingBottom:'1.4rem' }} variant="h1" color="white">Feel The Music</Typography>
-                        <Typography   sx={{ paddingBottom:'1.4rem' }} variant="body1" color="white">Stream over 20 thousand songs with one click</Typography>
+                        <Typography fontSize='3.4rem' sx={{ fontWeight: 500, paddingBottom:'1.4rem' }} variant="h1" color="white">Feel The Music</Typography>
+                        <Typography   sx={{ paddingBottom:'1.4rem' }} fontSize='1.2rem' variant="body1" color="white">Stream over 20 thousand songs with one click</Typography>
                         <ColorButton variant="contained"  >Join Now</ColorButton>
                     </Box>
                 </Box>

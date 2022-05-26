@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 
 
 const Circle2styled = styled(Box)(({ theme }) => ({
+    [theme.breakpoints.up('sm')]: {
     borderRadius: '50%',
 	backgroundColor: '#3457b21a',
 	zIndex: '-1',
@@ -12,12 +13,22 @@ const Circle2styled = styled(Box)(({ theme }) => ({
     height: '280px',
 	top:'22vh',
 	left: '30vw' ,
-
+    },
+    [theme.breakpoints.down('sm')]: {
+        borderRadius: '50%',
+        backgroundColor: '#3457b21a',
+        zIndex: '-1',
+        position: 'absolute',
+        width: '100px',
+        height: '100px',
+        top:'14vh',
+        left: '29vw' ,
+        }
   }));
 
 const Circle2 = () => {
     return ( 
-        <Circle2styled sx={{display: { xs: 'none', md: 'inline'}}}/>
+        <Circle2styled />
         
      );
 }

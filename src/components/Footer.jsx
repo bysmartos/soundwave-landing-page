@@ -14,7 +14,7 @@ import { sizing } from '@mui/system';
 export default function Footer() {
   return (
     <>
-      <AppBar color="secondary"  elevation={0} position="fixed" style={{boxShadow: "none"}} sx={{ top: 'auto', bottom: 0 }}>
+      <AppBar color="secondary"  elevation={0} position="static" style={{boxShadow: "none"}} sx={{ top: 'auto', bottom: 0 }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-around'}}>
           <Box sx={{ display:'flex',}} >
             <Typography sx={{ fontWeight: 'bold' }} variant="body1" color="white">About Us</Typography>

@@ -2,6 +2,10 @@
 	font-family: Poppins;
 }
 
+ul {
+	list-style: none;
+}
+
 
 .rrss{
 	width: 1rem;
@@ -13,7 +17,7 @@
 	
 }
 
-.homePage {
+.homePage, .discoverBox {
 	
 	display: flex;
 	
