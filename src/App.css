@@ -35,3 +35,27 @@ ul {
 	display: flex;
 	align-items: center;
 }
+
+.logoNavbar {
+	display:flex;
+	align-content: center;
+	align-items: center;
+}
+
+.logo{
+	width: 3rem;
+}
+
+.discoverBox {
+	height:100vh;
+	align-items: center ;
+}
+
+
+.imgDiscover{
+	width: 16rem;
+}
+
+.logosDiscover {
+	width: 2.6rem;
+}

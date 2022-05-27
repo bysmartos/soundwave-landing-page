@@ -8,13 +8,35 @@ import { Box } from '@mui/material';
 import { Menu, MenuItem } from '@mui/material';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material';
+import {useScrollTrigger} from '@mui/material';
+import {Slide} from '@mui/material';
+import PropTypes from 'prop-types';
+import CssBaseline from '@mui/material/CssBaseline';
+import Container from '@mui/material/Container';
+
 
 const pages = ['Discover', 'Join'];
 
+
 const ColorAppBar = styled(AppBar)(({ theme }) => ({
-  color: theme.palette.getContrastText('#1762A7'),
-  backgroundColor: '#2F303A',
+  backgroundColor: '#202027',
+
 }));
+
+// function HideOnScroll(props){
+//   const  {children}  = props;
+//   const trigger = useScrollTrigger();
+//   return (
+//     <Slide appear={false} direction="down" in={!trigger}>
+//       {children}
+//     </Slide>
+//   );
+// }
+
+// HideOnScroll.propTypes = {
+//   children: PropTypes.element.isRequired,
+ 
+// };
 
 
 
@@ -37,11 +59,12 @@ const Navbar = () => {
     setAnchorElUser(null);
   };
     return ( 
-        <ColorAppBar  color="transparent"  elevation={0} position="fixed" sx={{ paddingTop: 2,flexWrap: 'wrap' }} style={{boxShadow: "none"}}>
+    <>
+        <ColorAppBar  position='fixed'  elevation={0}  sx={{ flexWrap: 'wrap' }} style={{boxShadow: "none"}}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-around'}}>
             <Box className='logoNavbar' sx={{ display: 'flex'}} >
-            <img src={logo}  alt="logo" />
-            <Typography  sx={{ display: 'flex', alignItems: 'center',  paddingLeft: 2, }} variant="h6" color='white'>
+            <img className= 'logo' src={logo}  alt="logo" />
+            <Typography  fontSize='1.2rem' sx={{ display: 'flex', alignItems: 'center',  paddingLeft: 2, }} variant="h6" color='white'>
               Soundwave
             </Typography>
             </Box>
@@ -51,7 +74,7 @@ const Navbar = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', }}
-              >
+              > 
                 {page}
               </MenuItem>
             ))}
@@ -59,6 +82,7 @@ const Navbar = () => {
             
           </Toolbar>
         </ColorAppBar>
+      </>
      );
 }  
 export default Navbar;

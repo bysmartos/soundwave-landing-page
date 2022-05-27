@@ -9,7 +9,6 @@ import Discover from './components/Discover';
 import Join from './components/Join';
 
 
-
 function App() {
   return (
     <div className="App">
@@ -18,8 +17,6 @@ function App() {
       <HomePage/>
       <Discover/>
       <Join/>
-      
-     
       </ThemeProvider>
     </div>
   );

@@ -9,8 +9,8 @@ import Circle1 from './Circle1';
 import Circle2 from './Circle 2';
 import Circle3 from './Circle3';
 
+
 const ColorButton = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText('#1762A7'),
     backgroundColor: '#1762A7',
     '&:hover': {
       backgroundColor: '#2180d8',
@@ -26,9 +26,6 @@ const ColorButton = styled(Button)(({ theme }) => ({
 const HomePage = () => {
     return ( 
         <>
-        <Circle3 />
-        <Circle2 />
-        <Circle1 />
         <Box sx={{  display:'flex', justifyContent: 'center'}}>
             <Box className='homePage'>
                 <Box className='girlContainer' sx={{display: { xs: 'none', md: 'flex'}}}>
