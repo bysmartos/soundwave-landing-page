@@ -1,61 +1,90 @@
-.body {
-	font-family: Poppins;
-}
-
+/*Reset ul*/
 ul {
 	list-style: none;
 }
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
+/* Media Queries para la imagen de la chica en la HomePage */
 
+@media (min-width: 1536px) {
+	.girl {
+		height: 76vh;
+		z-index: 1;
+	}}
+
+@media (max-width: 1535px) {
+	.girl {
+		height: 66vh;
+		z-index: 1;
+	}}
+
+/* Tamaño imagenes de RRSS en el Footer */
 .rrss{
 	width: 1rem;
 }
 
-.girl {
-	height: 70vh;
-	z-index: 1;
-	
-}
+/* Tamaño logo de la NavBar */
 
-.homePage, .discoverBox {
-	
-	display: flex;
-	
-
-}
-
-.girlContainer{
-	height:100vh;
-	display: flex;
-	align-items: flex-end;
-}
-
-.textContainer{
-	height:100vh;
-	display: flex;
-	align-items: center;
-}
-
-.logoNavbar {
-	display:flex;
-	align-content: center;
-	align-items: center;
-}
 
 .logo{
 	width: 3rem;
 }
 
-.discoverBox {
-	height:100vh;
-	align-items: center ;
+/* Media Queries para la imagen que aparece en Discovery */
+
+@media (min-width: 601px) {
+	.imgDiscover{
+		width: 24rem;
+	}
+	}
+
+
+@media (max-width: 600px) {
+	.imgDiscover{
+		width: 14rem;
+	}
+	}
+
+
+
+/* Overflow para los circulos de fondo */
+
+.homePageGeneralDiv{
+	overflow: hidden;
+	position: relative;
 }
 
 
-.imgDiscover{
-	width: 16rem;
+.Joinout{
+	overflow: hidden;
+	position: relative;
 }
+
+/* Tamaño imagenes que hay en la lista de Discover */
 
 .logosDiscover {
 	width: 2.6rem;
 }
+
+/* Tamaño apartado Join */
+
+/* Media Queries para la imagen que aparece en Discovery */
+
+@media (min-width: 601px) {
+	.JoinBox{
+		height:90vh;
+	}
+	}
+
+@media (max-width: 600px) {
+	.JoinBox{
+		height:83vh;
+	}
+	}

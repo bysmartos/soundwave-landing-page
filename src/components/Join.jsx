@@ -1,26 +1,37 @@
 import React from 'react'
 import Footer from './Footer';
-import { Box } from '@mui/material';
-import { Typography } from '@mui/material';
+import { Box,Typography,styled } from '@mui/material';
+import Login from './JoinLogin';
+import Circle4 from './Circle4';
+import Circle5 from './Circle5';
 
+
+
+  const StyledTypography = styled(Typography)(({ theme }) => ({
+    color: '#BC3A80',
+   
+  }));
+
+  
 
 const Join = () => {
     return ( 
-    <>
-        <Box sx={{  display:'flex', justifyContent: 'center'}}>
-            <Box className='joinPage'>
-                <Box className='joincontainertext' sx={{display: { xs: 'none', md: 'flex'}}}>
-                <Typography   sx={{ paddingBottom:'1.4rem' }} fontSize='1.2rem' variant="body1" color="white">Join the</Typography>
-                <Typography   sx={{ paddingBottom:'1.4rem' }} fontSize='1.2rem' variant="body1" color="white">fun.</Typography>
-                </Box>
-                <Box className='formContainer'sx={{ paddingRight:{xs:'1rem'}, paddingLeft:{xs:'2rem'} }}>
-                    <Box sx={{  display: { xs: 'flex', md: 'flex' }, flexDirection: 'column',  flexWrap: 'wrap'}}>
-                    </Box>
-                </Box>
+    <div className='Joinout'>
+        <Circle4 />
+        <Circle5 />
+        <Box  id='Join'sx={{  display:'flex', justifyContent: 'center', flexWrap: 'wrap'}} >
+            <Box className='JoinBox'  sx={{ display: 'flex', alignItems:'center', flexDirection: { xs: 'column', md: 'row' }}}>
+                  <Box sx={{paddingRight:{ md: '2rem', xl: '6rem' },padding:{ xs: '2rem' }, display:'flex', flexWrap: 'wrap' }}>
+                      <Typography sx={{ fontWeight: '900' }}fontSize='3.6rem'  variant="body1" color="white">Join the&nbsp;</Typography>
+                      <StyledTypography  sx={{ fontWeight: '900' }} fontSize='3.6rem' variant="body1" > fun.</StyledTypography>
+                  </Box>
+                  <Box >
+                    <Login/>
+                  </Box>
             </Box>
         </Box>
         <Footer/>
-    </>
+    </div>
      );
 }
  

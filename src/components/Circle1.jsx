@@ -1,36 +1,38 @@
 import React from 'react';
 import {styled} from '@mui/material'
 import { Box } from '@mui/material';
-import useMediaQuery from '@mui/material/useMediaQuery';
-
 
 const Circle1styled = styled(Box)(({ theme }) => ({
+    borderRadius: '50%',
+    backgroundColor: '#bc3a801a',
+    zIndex: '-1',
     [theme.breakpoints.down('sm')]: {
-        borderRadius: '50%',
-        backgroundColor: '#bc3a801a',
-        zIndex: '-1',
         width: '100px',
         height: '100px',
         position: 'absolute',
-        top:'76vh',
-        left: '6vw' ,
+        top:'83vh',
+        left: '4vw' ,
+    },
+    [theme.breakpoints.up('sm')]: {
+        width: '260px',
+        height: '260px',
+        position: 'absolute',
+        top:'44vh',
+        left: '3vw' ,
+    },
+    [theme.breakpoints.up('xl')]: {
+        width: '500px',
+        height: '500px',
+        position: 'absolute',
+        top:'30vh',
+        left: '5vw' ,
         },
-        [theme.breakpoints.up('sm')]: {
-    borderRadius: '50%',
-	backgroundColor: '#bc3a801a',
-	zIndex: '-1',
-	width: '280px',
-    height: '280px',
-    position: 'absolute',
-	top:'40vh',
-	left: '10vw' ,
-    }
     
   }));
 
 
 const Circle1 = () => {
-    return ( 
+    return (
         <Circle1styled />
      );
 }

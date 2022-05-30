@@ -1,40 +1,52 @@
 import React from 'react'
-import {List, ListItem, Fragment, Typography} from '@mui/material'
+import {List, ListItem, styled, Link } from '@mui/material'
 import charts from '../images/microphone.svg'
 import album from '../images/albums.svg'
 import more from '../images/more.svg';
-import {styled}  from '@mui/material' 
 
 
 
 const StyledListItem = styled(ListItem)(({ theme }) => ({
   backgroundColor: '#202027',
-  width:'6rem',
-  height: '6rem',
+  width:'5rem',
+  height: '5rem',
   alignItems: 'center',
   display: 'flex',
 
 }));
+
+
+const StyledLink = styled(Link)(({ theme }) => ({
+  '&:hover': {
+    color: '#ADADAD',
+  },
+  textDecoration: 'none',
+  fontWeight: 'bold',
+  color:"white"
+
+}));
+
+
 export const DiscoverList = () => {
   return (
     <>
-    <List sx={{ display:'flex', justifyContent:'flex-start',paddingBottom: '1rem' }}>
-    <StyledListItem sx={{ display:'flex', marginRight:'1rem', flexDirection: 'column', justifyContent:'center', alignContent: 'center' }}>
-    <img className='logosDiscover' src={charts} alt="" />
-    <Typography color='white' variant="body1" >Charts</Typography>
+      <List sx={{ display:'flex', justifyContent:'flex-start',paddingBottom: '1rem',paddingTop: '1rem' }}>
+        <StyledListItem sx={{ display:'flex', marginRight:'1rem', flexDirection: 'column', justifyContent:'center', alignContent: 'center' }}>
+          <img className='logosDiscover' src={charts} alt="" />
+          <StyledLink  variant="body1" >Charts</StyledLink>
+        </StyledListItem>
 
-    </StyledListItem>
-    <StyledListItem  sx={{ display:'flex', marginRight:'1rem', flexDirection: 'column', justifyContent:'center', alignContent: 'center'  }}>
-        <img className='logosDiscover' src={album} alt="" />
-        <Typography color='white' variant="body1" >Albums</Typography>
+        <StyledListItem  sx={{ display:'flex', marginRight:'1rem', flexDirection: 'column', justifyContent:'center', alignContent: 'center'  }}>
+            <img className='logosDiscover' src={album} alt="" />
+            <StyledLink  variant="body1" >Albums</StyledLink>
+        </StyledListItem>
 
-    </StyledListItem>
-    <StyledListItem sx={{ display:'flex', flexDirection: 'column', justifyContent:'center', alignContent: 'center' }} >
-        <img className='logosDiscover' src={more} alt="" />
-        <Typography color='white' variant="body1" >More</Typography>
-
-    </StyledListItem>
-    </List>
+        <StyledListItem sx={{ display:'flex', flexDirection: 'column', justifyContent:'center', alignContent: 'center' }} >
+            <img className='logosDiscover' src={more} alt="" />
+            <StyledLink  variant="body1" >More</StyledLink>
+        </StyledListItem>
+        
+      </List>
     </>
   )
 }
