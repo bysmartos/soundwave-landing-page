@@ -5,3 +5,9 @@ body {
     font-family: Poppins;
 }
 
+/* Ocultar barra de scroll */
+
+*::-webkit-scrollbar { /* This is the magic bit for WebKit */ 
+    display: none; }
+
+
