@@ -19,14 +19,14 @@ const Circle3styled = styled(Box)(({ theme }) => ({
         width: '20rem',
         height: '20rem',
         top: '50vh',
-        left: '73vw',
+        left: '74vw',
     },
 
     [theme.breakpoints.up('xl')]: {
         width: '34rem',
         height: '34rem',
         top: '44vh',
-        left: '70vw',
+        left: '71vw',
     },
  
   }));
