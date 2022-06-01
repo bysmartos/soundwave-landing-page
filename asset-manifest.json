@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/soundwave-landing-page/static/css/main.80406f88.css",
-    "main.js": "/soundwave-landing-page/static/js/main.3f25a6d5.js",
+    "main.js": "/soundwave-landing-page/static/js/main.6eaeffe4.js",
     "static/media/landing-page-girl.png": "/soundwave-landing-page/static/media/landing-page-girl.9d276ac0bfa4c188903e.png",
     "static/media/covers.jpg": "/soundwave-landing-page/static/media/covers.77f7098f609ef18767e5.jpg",
     "index.html": "/soundwave-landing-page/index.html",
@@ -11,10 +11,10 @@
     "static/media/facebook.svg": "/soundwave-landing-page/static/media/facebook.9a78c5da61adcff89056f886e3b14dcd.svg",
     "static/media/albums.svg": "/soundwave-landing-page/static/media/albums.edcbb360c6cfb46704f7516b3c510d45.svg",
     "main.80406f88.css.map": "/soundwave-landing-page/static/css/main.80406f88.css.map",
-    "main.3f25a6d5.js.map": "/soundwave-landing-page/static/js/main.3f25a6d5.js.map"
+    "main.6eaeffe4.js.map": "/soundwave-landing-page/static/js/main.6eaeffe4.js.map"
   },
   "entrypoints": [
     "static/css/main.80406f88.css",
-    "static/js/main.3f25a6d5.js"
+    "static/js/main.6eaeffe4.js"
   ]
 }
